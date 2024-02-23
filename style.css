@@ -221,10 +221,10 @@ footer {
 }
 
 #spinner {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
     animation: spin 1s linear infinite;
     color: red;
 }
