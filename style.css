@@ -10,6 +10,7 @@
 
 body {
     font-family: "Kode Mono", monospace;
+    overflow-x: hidden;
 }
 
 header {
@@ -108,7 +109,7 @@ header > div > p:nth-child(2) {
     height: 300px;
     gap: 20px;
     position: relative;
-    left: -70px;
+    /*left: -70px;*/
 }
 
 #Timeline .others > span {
