@@ -220,6 +220,21 @@ footer {
     background-color: #001100;
 }
 
+#spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 1s linear infinite;
+    color: red;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @media screen and (max-width: 768px) {
     header {
         padding-bottom: 200px;
