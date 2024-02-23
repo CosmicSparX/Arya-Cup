@@ -17,7 +17,7 @@ header {
     width: 100vw;
     height: 50vh;
     background-size: cover;
-    background: url("./imgs/banner.png") fixed center;
+    background: url("./imgs/banner.png") no-repeat fixed center;
     display: grid;
     place-items: center;
     padding-bottom: 400px;
@@ -152,7 +152,7 @@ header > div > p:nth-child(2) {
 }
 
 #Events img {
-    height: 300px;
+    height: auto;
     width: 100%;
     border-radius: 20px 20px 0 0;
     margin-bottom: 15px;
@@ -235,11 +235,94 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
     header {
-        padding-bottom: 200px;
-        display: grid;
-        place-items: center;
+        height: 35vh;
+        padding-bottom: 250px;
     }
-    
+
+    #header-box {
+        width: 80vw;
+        height: 300px;
+        top: 50%;
+    }
+
+    #header-box p {
+        font-size: clamp(0.8em, 3vw, 20px);
+    }
+
+    #header-box > img {
+        display: none;
+    }
+
+    #Timeline {
+        width: 100%;
+        margin: 400px 0 100px;
+        grid-template-areas:
+            "header"
+            "date1"
+            "cricket"
+            "date2"
+            "other-sports";
+        grid-template-columns: none;
+        gap: 40px;
+        padding: 20px 0;
+    }
+
+    #Timeline > h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    #Timeline > h2 {
+        font-size: 1.3rem;
+    }
+
+    #Timeline .cricket {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    #Timeline .others {
+        height: 200px;
+        margin: 0 20px;
+        gap: 20px;
+        column-gap: 0;
+    }
+
+    #Timeline .others > span > span {
+        font-size: 20px;
+        top: 5px;
+    }
+
+    #Timeline > h2:nth-child(1){
+        grid-area: date1;
+    }
+
+    #Timeline > h2:nth-child(2){
+        grid-area: date2;
+    }
+
+    #Timeline span {
+        position: relative;
+        top: -15px;
+    }
+
+    #Poster {
+        height: 20vh;
+    }
+
+    #Events {
+        width: 80vw;
+        margin: 100px auto;
+    }
+
+    #Events > div {
+        width: 80vw;
+    }
+
+    #Events > div  a {
+        margin: 10px auto;
+    }
+
 }
