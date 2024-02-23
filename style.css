@@ -295,11 +295,11 @@ footer {
         top: 5px;
     }
 
-    #Timeline > h2:nth-child(1){
+    #Timeline > h2:nth-child(2){
         grid-area: date1;
     }
 
-    #Timeline > h2:nth-child(2){
+    #Timeline > h2:nth-child(3){
         grid-area: date2;
     }
 
